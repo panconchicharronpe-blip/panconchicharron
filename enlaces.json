@@ -1,0 +1,14 @@
+{
+  "tiktok": {
+    "key": "tiktokUrl",
+    "defaultUrl": "https://www.tiktok.com/@ibaillanos/video/7545908100889316630"
+  },
+  "instagram": {
+    "key": "instagramUrl",
+    "defaultUrl": "https://www.instagram.com/p/DOJcwO-DOnC/"
+  },
+  "youtube": {
+    "key": "youtubeUrl",
+    "defaultUrl": "https://www.youtube.com/shorts/vUADB2TmIo4"
+  }
+}

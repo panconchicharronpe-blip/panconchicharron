@@ -21,14 +21,14 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 20px;
+            padding: 15px;
             text-align: center;
-            overflow: hidden;
+            overflow-x: hidden;
             position: relative;
         }
         
         .peru-flag {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
@@ -39,43 +39,46 @@
         }
         
         .container {
-            max-width: 800px;
+            max-width: 100%;
             width: 100%;
             background: rgba(255, 255, 255, 0.15);
             backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             position: relative;
             z-index: 1;
             border: 2px solid rgba(255, 255, 255, 0.2);
+            margin: 15px 0;
         }
         
         header {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         
         h1 {
-            font-size: 2.5rem;
+            font-size: 1.8rem;
             margin-bottom: 10px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
             color: #ffffff;
+            line-height: 1.3;
         }
         
         .subtitle {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
+            font-size: 1rem;
+            margin-bottom: 15px;
             opacity: 0.9;
             color: #fffc;
+            line-height: 1.4;
         }
         
         .food-image {
             width: 100%;
-            max-width: 400px;
-            border-radius: 15px;
-            margin: 20px auto;
+            max-width: 300px;
+            border-radius: 12px;
+            margin: 15px auto;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             border: 3px solid white;
         }
         
@@ -86,11 +89,12 @@
         }
         
         .social-icons {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 25px auto;
             justify-content: center;
-            flex-wrap: wrap;
-            gap: 25px;
-            margin: 40px 0;
+            max-width: 500px;
         }
         
         .social-item {
@@ -105,23 +109,23 @@
         }
         
         .social-icon {
-            width: 80px;
-            height: 80px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2.5rem;
+            font-size: 1.8rem;
             color: white;
-            margin-bottom: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             transition: all 0.3s;
             cursor: pointer;
         }
         
         .social-icon:hover {
             transform: scale(1.1);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
         }
         
         .tiktok { background: linear-gradient(45deg, #000000, #00f2ea, #ff0050); }
@@ -131,14 +135,14 @@
         
         .social-name {
             font-weight: 600;
-            margin-top: 5px;
-            font-size: 1.1rem;
+            margin-top: 3px;
+            font-size: 0.9rem;
             color: #ffffff;
         }
         
         .vote-text {
-            font-size: 1.3rem;
-            margin: 20px 0;
+            font-size: 1.1rem;
+            margin: 15px 0;
             font-weight: 600;
             color: #ffffff;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -146,17 +150,18 @@
         
         .instructions {
             background: rgba(255, 255, 255, 0.15);
-            padding: 20px;
-            border-radius: 15px;
-            margin: 20px 0;
+            padding: 15px;
+            border-radius: 12px;
+            margin: 15px 0;
             text-align: left;
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
         
         .instructions h2 {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             text-align: center;
             color: #ffffff;
+            font-size: 1.2rem;
         }
         
         .instructions ol {
@@ -164,78 +169,32 @@
         }
         
         .instructions li {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             color: #ffffff;
+            font-size: 0.9rem;
+            line-height: 1.4;
         }
         
-        .link-form {
-            background: rgba(255, 255, 255, 0.15);
-            padding: 20px;
-            border-radius: 15px;
-            margin: 20px 0;
-            text-align: left;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .link-form h2 {
-            margin-bottom: 15px;
-            text-align: center;
-            color: #ffffff;
-        }
-        
-        .form-group {
-            margin-bottom: 15px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: 600;
-            color: #ffffff;
-        }
-        
-        .form-group input {
-            width: 100%;
-            padding: 12px;
-            border: none;
-            border-radius: 8px;
-            background: rgba(255, 255, 255, 0.9);
-            color: #333;
-        }
-        
-        .save-btn {
-            background: #ff0000;
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 8px;
-            font-weight: 600;
-            cursor: pointer;
-            display: block;
-            margin: 20px auto 0;
-            transition: background 0.3s;
-            border: 2px solid white;
-        }
-        
-        .save-btn:hover {
-            background: #cc0000;
-        }
+
         
         footer {
-            margin-top: 30px;
-            font-size: 0.9rem;
+            margin-top: 20px;
+            font-size: 0.8rem;
             opacity: 0.8;
             color: #ffffff;
+            padding: 0 10px;
+            line-height: 1.4;
         }
         
         /* Animaciones de globos */
         .balloon {
             position: absolute;
-            width: 30px;
-            height: 40px;
+            width: 25px;
+            height: 35px;
             border-radius: 50%;
             z-index: -1;
             animation: float 15s infinite;
+            opacity: 0.7;
         }
         
         @keyframes float {
@@ -252,8 +211,8 @@
         /* Animaciones de serpentinas */
         .confetti {
             position: absolute;
-            width: 10px;
-            height: 30px;
+            width: 8px;
+            height: 25px;
             z-index: -1;
             animation: fall 8s linear infinite;
         }
@@ -269,19 +228,48 @@
             }
         }
         
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
-            }
-            
+        /* Para tablets */
+        @media (min-width: 480px) and (max-width: 768px) {
             .social-icons {
-                gap: 15px;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                max-width: 500px;
+                margin: 25px auto;
             }
             
             .social-icon {
                 width: 70px;
                 height: 70px;
                 font-size: 2rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+        
+        /* Para dispositivos más grandes */
+        @media (min-width: 769px) {
+            .container {
+                max-width: 700px;
+                padding: 30px;
+            }
+            
+            .social-icons {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                max-width: 500px;
+                margin: 25px auto;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .social-icon {
+                width: 80px;
+                height: 80px;
+                font-size: 2.2rem;
             }
         }
     </style>
@@ -303,15 +291,11 @@
     <div class="confetti" style="--x: 50; background: #ffffff; left: 50%; animation-delay: 5s;"></div>
     <div class="confetti" style="--x: 75; background: #ff0000; left: 75%; animation-delay: 7s;"></div>
     <div class="confetti" style="--x: 90; background: #ffffff; left: 90%; animation-delay: 2s;"></div>
-    <div class="confetti" style="--x: 15; background: #ff0000; left: 15%; animation-delay: 4s;"></div>
-    <div class="confetti" style="--x: 35; background: #ffffff; left: 35%; animation-delay: 6s;"></div>
-    <div class="confetti" style="--x: 65; background: #ff0000; left: 65%; animation-delay: 8s;"></div>
-    <div class="confetti" style="--x: 85; background: #ffffff; left: 85%; animation-delay: 0s;"></div>
 
     <div class="container">
         <header>
             <h1>¡Vota por el Mejor Pan con Chicharrón!</h1>
-            <p class="subtitle">Apoya a tu favorito en nuestra competencia de sabor peruano</p>
+            <p class="subtitle">Apoya a nuestro desayuno favorito en la competencia de sabor Mundial</p>
         </header>
         
         <div class="food-image">
@@ -319,66 +303,40 @@
             <img src="image/panchiccharron.jpg" alt="Pan con Chicharrón Peruano">
         </div>
         
-        <p class="vote-text">¡Haz clic en tus redes sociales favoritas para votar!</p>
+        <p class="vote-text">¡Haz clic en el icono de las redes sociales y vota en el comentario!</p>
         
         <div class="social-icons">
             <div class="social-item">
-                <a id="tiktok-link" href="https://www.tiktok.com/@ibaillanos/video/7543311318334459158?q=ibaillanos&t=1756879143809" target="_blank" class="social-icon tiktok">
+                <a id="tiktok-link" href="https://www.tiktok.com/@ibaillanos/video/7545908100889316630" target="_blank" class="social-icon tiktok">
                     <i class="fab fa-tiktok"></i>
                 </a>
                 <span class="social-name">TikTok</span>
             </div>
             
             <div class="social-item">
-                <a id="instagram-link" href="#" target="_blank" class="social-icon instagram">
+                <a id="instagram-link" href="https://www.instagram.com/p/DOJcwO-DOnC/" target="_blank" class="social-icon instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
                 <span class="social-name">Instagram</span>
             </div>
             
             <div class="social-item">
-                <a id="youtube-link" href="https://www.youtube.com/@IbaiLlanos" target="_blank" class="social-icon youtube">
+                <a id="youtube-link" href="https://www.youtube.com/shorts/vUADB2TmIo4" target="_blank" class="social-icon youtube">
                     <i class="fab fa-youtube"></i>
                 </a>
                 <span class="social-name">YouTube</span>
             </div>
-            
-            <div class="social-item">
-                <a id="facebook-link" href="#" target="_blank" class="social-icon facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <span class="social-name">Facebook</span>
-            </div>
         </div>
         
-        <div class="link-form">
-            <h2>Configura tus enlaces</h2>
-            <div class="form-group">
-                <label for="tiktok-url">Enlace de TikTok:</label>
-                <input type="url" id="tiktok-url" placeholder="https://www.tiktok.com/@usuario/video/123456" value="https://www.tiktok.com/@ejemplo/video/1234567890">
-            </div>
-            <div class="form-group">
-                <label for="instagram-url">Enlace de Instagram:</label>
-                <input type="url" id="instagram-url" placeholder="https://www.instagram.com/p/ABC123/" value="https://www.instagram.com/p/Cg1eP6Lr7tH/">
-            </div>
-            <div class="form-group">
-                <label for="youtube-url">Enlace de YouTube:</label>
-                <input type="url" id="youtube-url" placeholder="https://www.youtube.com/watch?v=abc123" value="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-            </div>
-            <div class="form-group">
-                <label for="facebook-url">Enlace de Facebook:</label>
-                <input type="url" id="facebook-url" placeholder="https://www.facebook.com/usuario/posts/123456" value="https://www.facebook.com/example/posts/101010101010">
-            </div>
-            <button class="save-btn" onclick="saveLinks()">Guardar Enlaces</button>
-        </div>
+
         
         <div class="instructions">
             <h2>¿Cómo votar?</h2>
             <ol>
-                <li>Haz clic en el icono de la red social donde deseas votar</li>
-                <li>Síguenos en esa red social</li>
-                <li>Busca la publicación del concurso de "Pan con Chicharrón"</li>
-                <li>¡Dale like, comparte y comenta para votar!</li>
+                <li>Haz clic en el icono y entra en cada una de las redes sociales para votar</li>
+               <li>¡Dale like en el comentario Ibai Creador  PERÚ 🇵🇪!</li>
+                <li>Responder "Yo voto por el mejor Pan con chicharrón"</li>
+                
             </ol>
         </div>
         
@@ -389,57 +347,23 @@
     </div>
 
     <script>
-        // Función para guardar los enlaces
-        function saveLinks() {
-            const tiktokUrl = document.getElementById('tiktok-url').value;
-            const instagramUrl = document.getElementById('instagram-url').value;
-            const youtubeUrl = document.getElementById('youtube-url').value;
-            const facebookUrl = document.getElementById('facebook-url').value;
-            
-            // Actualizar los enlaces
-            document.getElementById('tiktok-link').href = tiktokUrl;
-            document.getElementById('instagram-link').href = instagramUrl;
-            document.getElementById('youtube-link').href = youtubeUrl;
-            document.getElementById('facebook-link').href = facebookUrl;
-            
-            // Guardar en localStorage
-            localStorage.setItem('tiktokUrl', tiktokUrl);
-            localStorage.setItem('instagramUrl', instagramUrl);
-            localStorage.setItem('youtubeUrl', youtubeUrl);
-            localStorage.setItem('facebookUrl', facebookUrl);
-            
-            // Efecto de confeti al guardar
-            createConfetti();
-            
-            alert('¡Enlaces guardados correctamente!');
-        }
-        
         // Cargar enlaces guardados al iniciar
         function loadSavedLinks() {
             const tiktokUrl = localStorage.getItem('tiktokUrl');
             const instagramUrl = localStorage.getItem('instagramUrl');
             const youtubeUrl = localStorage.getItem('youtubeUrl');
-            const facebookUrl = localStorage.getItem('facebookUrl');
             
             if (tiktokUrl) {
-                document.getElementById('tiktok-url').value = tiktokUrl;
                 document.getElementById('tiktok-link').href = tiktokUrl;
-            }
+            } // Mantener el enlace predeterminado si no hay valor en localStorage
             
             if (instagramUrl) {
-                document.getElementById('instagram-url').value = instagramUrl;
                 document.getElementById('instagram-link').href = instagramUrl;
-            }
+            } // Mantener el enlace predeterminado si no hay valor en localStorage
             
             if (youtubeUrl) {
-                document.getElementById('youtube-url').value = youtubeUrl;
                 document.getElementById('youtube-link').href = youtubeUrl;
-            }
-            
-            if (facebookUrl) {
-                document.getElementById('facebook-url').value = facebookUrl;
-                document.getElementById('facebook-link').href = facebookUrl;
-            }
+            } // Mantener el enlace predeterminado si no hay valor en localStorage
         }
         
         // Efecto de confeti al hacer clic en un icono
@@ -458,7 +382,7 @@
         
         // Función para crear efecto de confeti
         function createConfetti() {
-            for (let i = 0; i < 20; i++) {
+            for (let i = 0; i < 15; i++) {
                 setTimeout(() => {
                     const confetti = document.createElement('div');
                     confetti.classList.add('confetti');
@@ -476,26 +400,9 @@
             }
         }
         
-        // Crear más globos dinámicamente
-        function createBalloons() {
-            for (let i = 0; i < 10; i++) {
-                setTimeout(() => {
-                    const balloon = document.createElement('div');
-                    balloon.classList.add('balloon');
-                    balloon.style.left = Math.random() * 100 + '%';
-                    balloon.style.backgroundColor = i % 2 === 0 ? '#ff0000' : '#ffffff';
-                    balloon.style.setProperty('--x', Math.random() * 100);
-                    balloon.style.animation = `float ${Math.random() * 10 + 10}s linear forwards`;
-                    balloon.style.animationDelay = Math.random() * 15 + 's';
-                    document.body.appendChild(balloon);
-                }, i * 1000);
-            }
-        }
-        
         // Cargar enlaces guardados cuando la página se carga
         window.onload = function() {
             loadSavedLinks();
-            createBalloons();
             createConfetti();
         };
     </script>
